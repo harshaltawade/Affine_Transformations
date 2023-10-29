@@ -26,9 +26,7 @@ Deployment Link : https://affinetransformations.streamlit.app/
 
 Github Repo : https://github.com/harshaltawade/Affine_Transformations
 
- 
-Deployment 
- 
+
  
  
 1)	Translation : 
