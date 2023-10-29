@@ -94,7 +94,7 @@ def scale_image(image, scale_factor):
     return scaled_image
 
 # Streamlit app
-st.title("Image Transformation Web App")
+st.title("Image Transformations")
 st.write("Upload an image and choose a transformation:")
 
 uploaded_image = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
@@ -104,8 +104,8 @@ if uploaded_image is not None:
 
     transformation_type = st.selectbox("Select Transformation", ["Translate", "Rotate", "Reflect", "Shear", "Scale"])
     if transformation_type == "Translate":
-        tx = st.slider("Translation X", -800, 800, 0)
-        ty = st.slider("Translation Y", -800, 800, 0)
+        tx = st.slider("Translation X", -400, 400, 0)
+        ty = st.slider("Translation Y", -400, 400, 0)
         if st.button("Apply Translation"):
             transformed_image = translate_image(image, tx, ty)
             st.image(transformed_image, caption="Translated Image", use_column_width=True)
